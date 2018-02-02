@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Store front</title>
+	<meta charset="utf-8">
+	<meta name="keywords" content="Arial, Portal, Classes, Art, Institute, Washington, Graphic, Design, Web, Artist, Kelly, Thomas, "/>
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<meta http-equiv="Content-Type" content="text/html;"/>
+	<meta name="description" content="Portal Page" />
+	<meta name="author" content="Kelly Thomas" />
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+	@import "reset.css";
+	.navbar
+	{
+		text-align: center;
+		width: 100%;
+		background-color: rgba(218, 23, 23, 0.74);
+		height:90px;
+		margin-top: 10.5px 
+	}
+	.navbar ul
+	{
+		margin: 17px;
+		margin-left: 90px;
+		padding: 0;
+		list-style: none;
+		position: relative;
+		font-size: 17px;
+		z-index: 99;
+	}
+	 .navbar ul li a
+	 {
+	 	display: block;
+	 	padding:25px;
+	 	color: white;
+	 	text-decoration: none;
+	 	width: 150px;
+	 }
+	 .navbar ul:after
+	 {
+	 	content: "";
+	 	clear: both;
+	 	display: block;
+	 }
+	 .navbar ul li
+	 {
+	 	float:left;
+	 	list-style: none;
+
+	 }
+	 .navbar ul ul
+	 {
+	 	display: none; 
+	 }
+	 .navbar ul li:hover > ul
+	 {
+	 	display: block;
+	 }
+	 .navbar ul li:hover
+	 {
+	 	background: rgba(218, 23, 23, 0.74);;
+	 	transition: 0.9s;
+	 }
+	 .navbar ul li:hover a
+	 {
+	 	color:white;
+
+	 }
+	 .navbar ul ul
+	 {
+	 	background: black;
+	 	opacity: 0.5;
+	 	padding: 0;
+	 	margin: 0px;
+	 	position: absolute;
+	 	top:100%;
+	 }
+	 .navbar ul ul li
+	 {
+	 	float: none;
+	 	position: relative;
+	 }
+	 .navbar ul ul li a
+	 {
+	 	padding: 25px;
+	 	color: white;
+	 	width: 300px;
+	 	text-align: left;
+	 }
+	 .navbar ul ul li a:hover 
+	 {
+	 	background: rgba(218, 23, 23);
+	 	color: white;
+	 	transition: 0.9s;
+	 }
+	 #wrapper 
+	{
+	width:100%; 
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#ffffff;
+	}
+	.maincontainer
+	{
+	width:940px; 
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#ffffff;}
+	header
+	{
+	width:100%;
+	height:auto;
+	margin-top:0px;
+	background-color:#ffffff;
+	background-image:url('');}
+
+	#title {width:940px; 
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:;}
+
+	#shop{position: fixed;
+	top:15%;
+	padding-top:0px;
+	padding-left:0px;
+	right:200px;
+	width:150px;
+	height:90px;
+	margin-right:-34px;
+	z-index:500;}
+
+	#arrowtwo{position: fixed;
+	top:45%;
+	padding-top:0px;
+	padding-right:0px;
+	left:10px;
+	width:150px;
+	height:90px;
+	margin-left:0px;
+	z-index:501;}
+
+	main{height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	width:85%;}
+
+	nav{width:930px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	background-color:;}
+
+	footer{width:100%;
+	height:auto;
+	background-color:#bfbfbf;
+	background-image:url(footer.png);}
+
+	#about{width:50%;
+	color:#000000;
+	text-align:;
+	padding:10px;
+	background-color:#f1f1f1;
+	font-family:century gothic;
+	font-size:14px;
+	margin:10px;
+	float:left;}
+
+	.image{width:30%;
+	color:#000000;
+	text-align:;
+	padding:10px;
+	padding-bottom:50px;
+	background-color:;
+	font-family:;
+	font-size:12px;
+	margin:;
+	float:left;}
+
+	.clear{clear:both;}
+
+	.poster{height:100%;
+	width:100%;}
+
+	.bold{font-weight:bold;
+	font-size:18px;}
+
+	.italic{font-family: century gothic;
+	color:#f709a0;
+	font-style:italic;}
+
+	input 
+	{
+	width: 30%;
+	color:#ffffff;
+	font-style: ;
+	font-size: .8em;
+	padding: .5em;
+	background-color: #c161d2;
+	border-style: solid;
+	border-color: #c161d2;
+	border-width: 1px;
+	outline: 0px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	} 
+
+	button 
+	{
+	width: 30%;
+	color:#ffffff;
+	font-style: ;
+	font-size: .8em;
+	padding: .5em;
+	background-color: #c161d2;
+	border-style: solid;
+	border-color: #c161d2;
+	border-width: 1px;
+	outline: 0px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	}
+	body
+		{
+			font-family: sans-serif;
+		}
+		a
+		{
+			text-decoration:none;
+			outline: none; 
+		}
+		a img
+		{
+			border:none;
+		}
+		.clr
+		{
+			clear:both;
+		}
+		.footer-main
+		{
+			width: 100%;
+			height: auto;
+			margin: auto;
+			background-color: #3d3d3d;
+			padding: 30px 20px;
+		}
+		.footer-inner
+		{
+			width:1200px;
+			height:auto;
+			margin: auto; 
+		}
+		.footer-left
+		{
+			width: 300px;
+			height: auto;
+			float: left;
+			border:1px solid #;
+		}
+		.footer-box
+		{
+			width:100%;
+			height: auto;
+			margin: auto;
+			border:1px 
+		}
+		.footer-box h6
+		{
+			font-family: sans-serif;
+			font-size: 20px;
+			color: #fff;
+			text-align: left;
+			margin: 0px;
+			font-weight: bold;
+			text-transform:uppercase;
+			padding-bottom: 15px;
+		}
+		.footer-box ul
+		{
+			position:relative;
+			margin: 0px;
+			padding: 10px;
+		}
+		.footer-box ul li
+		{
+			list-style-type: none;
+			padding-top: 2px;
+		}
+		.footer-box ul li a
+		{
+			font-family: sans-serif;
+			font-size: 14px;
+			color: white;
+		}
+		.fa 
+		{
+			padding:15px;
+			font-size: 10px;
+			width: 5px;
+			text-align: center;
+			text-decoration: none;
+			margin: 0.015px 2px;
+        }
+        .fa:hover 
+        {
+		    opacity: 0.7;
+        }
+        .fa-facebook 
+        {
+           
+           color: white;
+        }
+        .fa-twitter 
+        {
+           
+           color: white;
+        }
+        .fa-google 
+        {
+           
+           color: white;
+        }
+        .fa-linkedin 
+        {
+			
+			color: white;
+        } 
+	</style>
+</head>
+<body>
+	<div class="topsection">
+		<h1 style="text-align: center;font-family:'PT Serif', serif;">The General Store</h1>
+		<p style="text-align: center;font-family: 'PT Serif', serif; margin-top: -20px;">The Online Supermarket</p>
+		<img src="24.png" style="float: right;height: 50px; width: 50px; margin-top: -50px; margin-right:60px;">
+		<img src="42.jpg" style="float: left;height: 100px; width: 180px; margin-top: -100px;>
+	</div>
+	<div class="navbar">
+		<div class="navbar">
+		<ul>
+			<li style="font-size: 20px;"><a href="#">Home</a></li>
+			<li style="font-size: 20px;"><a href="#">Kitchen</a>
+				<ul>
+					<li style="font-size:15px;"><a href="#">Water & Beverages</a></li>
+					<li style="font-size:15px;"><a href="#">Fruits & Vegetables</a></li>
+					<li style="font-size:15px;"><a href="#">Snacks</a></li>
+					<li style="font-size:15px;"><a href="#">Sweets</a></li>
+					<li style="font-size:15px;"><a href="#">Pickles</a></li>
+				</ul>
+			</li>
+			<li style="font-size: 20px;"><a href="#">Personal Care</a>
+				<ul>
+					<li style="font-size:15px;"><a href="#">Ayurvedic</a></li>
+					<li style="font-size:15px;"><a href="#">Baby Care</a></li>
+					<li style="font-size:15px;"><a href="#">Cosmetics</a></li>
+					<li style="font-size:15px;"><a href="#">Hair Care</a></li>
+				</ul>
+			</li>
+			<li style="font-size: 20px;"><a href="#">Household</a>
+				<ul>
+					<li style="font-size:15px;"><a href="#">Cleaning Accessories</a></li>
+					<li style="font-size:15px;"><a href="#">Gardening Needs</a></li>
+					<li style="font-size:15px;"><a href="#">Pet Care</a></li>
+					<li style="font-size:15px;"><a href="#">Plastic Wear</a></li>
+					<li style="font-size:15px;"><a href="#">Safety Accessories</a></li>
+					<li style="font-size:15px;"><a href="#">Festive Decoratives</a></li>
+				</ul>
+			</li>
+
+			<li style="font-size: 20px;"><a href="file:///C:/Users/Kushagra/Desktop/mad%20ex%201/loginfinal.html">Login</a></li>
+			<li style="font-size: 20px;"><a href="file:///C:/Users/Kushagra/Desktop/mad%20ex%201/Customer.html">Register</a></li>
+		</ul>
+	</div>
+	</div>
+	<div>
+		<img src="15.jpg" style="position:relative;width:1503px;margin-top:-20px;">
+	</div>
+    <div id="wrapper">
+	<main>
+	<div class="maincontainer">
+	<section class="image"><img src="17.png" class="poster"><span class="bold">Lays</span><br>price:$300<br><input id="addLays" type="button" value="Add to Cart"/></section>
+	<section class="image"><img src="18.png" class="poster"><span class="bold">Oil</span><Br>price:$300<br><input id="addOil" type="button" value="Add to Cart"/></section>
+	<section class="image"><img src="19.png" class="poster"><span class="bold">Gel</span><br>price:$350<br><input id="addGel" type="button" value="Add to Cart"/></section></section>
+	<br class="clear">
+	<section class="image"><img src="20.png" class="poster"><span class="bold">Oats</span><br>price:$350<br><input id="addOats" type="button" value="Add to Cart"/></section>
+	<section class="image"><img src="21.png" class="poster"><span class="bold">Cleaner</span><Br>price:$350<br><input id="addCleaner" type="button" value="Add to Cart"/></section>
+	<section class="image"><img src="22.png" class="poster"><span class="bold">Honey</span><br>price:$450<br><input id="addHoney" type="button" value="Add to Cart"/></section></section>
+	<br class="clear">
+
+</div>
+<div id="shop">
+	<ul id="listOutput" style="margin-top: 350px;"></ul>
+    <p style="position:absolute;margin-top: -110px;z-index: 2;">Total: $<span id="total">0</span>.00</p><br>
+    <button id="reset" style="margin-top: -65px;">Clear</button>
+</div>
+</main>
+</div>
+<div class="footer-main">
+		<div class="footer-inner">
+			<div class="footer-left">
+				<div class="footer-box">
+				<h6 style="font-family:'PT Serif', serif;">Menu</h6>
+				<ul>
+					<li><a href="#" style="font-family:'PT Serif', serif; font-size:18px;">Home</a></li>
+					<li><a href="#" style="font-family:'PT Serif', serif; font-size:18px;">Kitchen</a></li>
+					<li><a href="#" style="font-family:'PT Serif', serif;font-size:18px;">Personal Care</a></li>
+					<li><a href="#" style="font-family:'PT Serif', serif;font-size:18px;">Household</a></li> 
+				</ul>
+				</div>
+				<div class="footer-box" style="margin-top: 60px;">
+				<h6 style="font-family:'PT Serif', serif;">Information</h6>
+				<ul>
+					<li><a href="#" style="font-family:'PT Serif', serif; font-size:18px;">Press</a></li>
+					<li ><a href="#" style="font-family:'PT Serif', serif; font-size:18px;">Terms</a></li>
+					<li ><a href="#" style="font-family:'PT Serif', serif;font-size:18px;">Clients</a></li>
+					<li ><a href="#" style="font-family:'PT Serif', serif;font-size:18px;">Parterns</a></li>
+					<li><a href="#" style="font-family:'PT Serif', serif;font-size:18px;">Support</a></li>
+				</ul>
+				</div>
+			</div>
+			<div class="footer-left">
+				<div class="footer-box">
+				<h6 style="font-family:'PT Serif', serif;">Customers Services</h6>
+				<ul>
+					<li ><a href="#" style="font-family:'PT Serif', serif;font-size:18px;" >Shipping</a></li>
+					<li ><a href="#" style="font-family:'PT Serif', serif;font-size:18px;">Terms & Conditions</a></li>
+					<li ><a href="#" style="font-family:'PT Serif', serif;font-size:18px;">Faqs</a></li>
+					<li ><a href="#" style="font-family:'PT Serif', serif;font-size:18px;">Contact</a></li>
+					<li ><a href="#" style="font-family:'PT Serif', serif;font-size:18px;">Online Shopping</a>
+					</li>
+				</ul>
+				</div>
+				<div class="footer-box" style="margin-top: 25px;margin-left: 200px;">
+				<h6 style="font-family:'PT Serif', serif;">Join Us</h6>
+				<ul>
+					<li><a href="#"><i class="fa fa-google-plus"></i>Google+</a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i>Twitter</a></li>
+					<li><a href="#"><i class="fa fa-facebook"></i>Facebook</a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i>LinkedIn</a></li>
+				</ul>
+				</div>
+			</div>
+			<div class="footer-left">
+				<div class="footer-box">
+				<h6 style="font-family:'PT Serif', serif;">My Account</h6>
+				<ul>
+					<li><a href="#" style="font-family:'PT Serif', serif;font-size:18px;font-size:18px;">Login</a></li>
+					<li><a href="#" style="font-family:'PT Serif', serif;font-size:18px;font-size:18px;">Register</a></li>
+					<li><a href="#" style="font-family:'PT Serif', serif;font-size:18px;font-size:18px;">Wishlist</a></li> 
+				</ul>
+				</div>
+			</div>
+			<div class="footer-left">
+				<div class="footer-box">
+				<h6 style="font-family:'PT Serif', serif;">Contact us</h6>
+				<ul>
+					<li style="color:white;font-family:'PT Serif', serif;">Tel : 02542-123456</li>
+					<li style="color:white; margin-top: 10px;font-family:'PT Serif', serif;">Email : info@megastore.co.in</li>
+				</ul>
+				</div>
+				<div class="footer-box" style="margin-top: 100px;font-family:'PT Serif', serif;">
+				<h6 style="font-family:'PT Serif', serif;">Head Quaters </h6>
+				<ul>
+					<li style="color:white;font-family:'PT Serif',serif;">12K,Raj Road,Kanat Place <br>Delhi - 221457</li>
+				</ul>
+				</div>
+			</div>
+			<div class="clr"></div> 
+		</div>
+		<div class="cpy" style="color: white;text-align:center;font-size: 17px; margin-top: 30px;">Copyright &copy 2018 | All Rights Reserved | Privacy Policy & Website Terms of Use
+        </div>
+        <div>
+        	<h4 style="text-align: center; color: white; font-family:'PT Serif', serif;font-size:18px;font-size:18px;">Created by : Kushagra Tandon</h4>
+        	<h4 style="text-align: center;color: white; font-family:'PT Serif', serif;font-size:18px;font-size:18px;">Reg. No.: 16BIT0217</h4>
+        </div>
+	</div>
+<script src="shopping.js"></script>
+<script type="text/javascript">
+var addLays = 300; 
+var addOil = 300; 
+var addGel = 300; 
+var addOats = 300; 
+var addCleaner = 300; 
+var addHoney = 300; 
+var total = 0; 
+var listOutput = document.getElementById("listOutput");
+document.getElementById("addLays").onclick = function() {
+this.className = "hideItem"; 																	
+var li = document.createElement("li");												
+var liText = document.createTextNode("Lays $300.00");			
+li.appendChild(liText);																				
+listOutput.appendChild(li);  																	
+
+total = total+addLays; 																				 
+document.getElementById("total").innerHTML = total; 					
+}
+document.getElementById("addOil").onclick = function() {
+this.className = "hideItem"; 																	
+
+var li = document.createElement("li");												
+var liText = document.createTextNode("Oil $300.00");			
+li.appendChild(liText);																				
+listOutput.appendChild(li);  																	
+
+total = total+addOil; 																				 
+document.getElementById("total").innerHTML = total; 					
+}
+document.getElementById("addGel").onclick = function() 
+{
+this.className = "hideItem"; 																	
+
+var li = document.createElement("li");												
+var liText = document.createTextNode("Gel $350.00");			
+li.appendChild(liText);																				
+listOutput.appendChild(li);  																	
+
+total = total+addGel; 																				
+document.getElementById("total").innerHTML = total; 					
+}
+document.getElementById("addOats").onclick = function() 
+{
+this.className = "hideItem"; 																	
+
+var li = document.createElement("li");												
+var liText = document.createTextNode("Oats $350.00");			
+li.appendChild(liText);																				
+listOutput.appendChild(li);  																	
+
+total = total+addOats; 																				
+document.getElementById("total").innerHTML = total; 					
+}
+document.getElementById("addCleaner").onclick = function() {
+this.className = "hideItem"; 																	
+
+var li = document.createElement("li");												
+var liText = document.createTextNode("Cleaner $350.00");			
+li.appendChild(liText);																				
+listOutput.appendChild(li);  																	
+total = total+addCleaner; 																				
+document.getElementById("total").innerHTML = total; 					
+}
+document.getElementById("addHoney").onclick = function() {
+this.className = "hideItem"; 																	
+
+var li = document.createElement("li");												
+var liText = document.createTextNode("Honey $450.00");			
+li.appendChild(liText);																				
+listOutput.appendChild(li);  																	
+
+total = total+addHoney; 																				
+document.getElementById("total").innerHTML = total; 					
+}
+document.getElementById("reset").onclick = function() 
+{ 
+  var butt = document.getElementsByTagName("input"); 
+	for (var i = 0; i < butt.length; i++) { 
+   	butt[i].className = "";
+	}
+	document.getElementById("listOutput").innerHTML = "";
+  total= 0;
+  document.getElementById("total").innerHTML = total;
+}
+
+</script>
+</body>
+</html>
